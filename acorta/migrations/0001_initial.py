@@ -13,12 +13,8 @@ class Migration(migrations.Migration):
         migrations.CreateModel(
             name='Url',
             fields=[
-                ('id', models.AutoField(verbose_name='ID', serialize=False, auto_created=True, primary_key=True)),
+                ('id', models.AutoField(verbose_name='ID', serialize=False, primary_key=True, auto_created=True)),
                 ('urlLarga', models.CharField(max_length=120)),
-                ('urlCorta', models.CharField(max_length=30)),
             ],
-            options={
-            },
-            bases=(models.Model,),
         ),
     ]
