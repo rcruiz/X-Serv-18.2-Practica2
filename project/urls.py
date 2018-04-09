@@ -19,8 +19,8 @@ from acorta import views
 #from django.contrib.auth.views import login, logout
 
 urlpatterns = [
-    url(r'^(\d+)$', views.mostrar_Urlcorta, name='Acceso a URL acortada'),
+    url(r'^(\d+)$', views.mostrar_Urlcorta, name='URLcorta'),
     url(r'^admin/', include(admin.site.urls)),
-    url(r'^$',views.process, name='process completo'),
-    url(r'^.*$', views.el404),
+    url(r'^$',views.process, name='process'),
+    url(r'^.*$', views.el404,name='error'),
 ]

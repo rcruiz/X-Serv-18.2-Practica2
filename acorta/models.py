@@ -1,5 +1,5 @@
 from django.db import models
 
+
 class Url(models.Model):
-    urlLarga = models.CharField(max_length=120)
-    #urlCorta = models.IntegerField() #
+    urlLarga = models.CharField(max_length=128)
